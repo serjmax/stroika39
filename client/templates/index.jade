@@ -1,0 +1,45 @@
+//- [dash:data]
+	{
+		"status": "development",
+		"category": "page",
+		"label": "Home",
+		"link": "../../index.html"
+	}
+	[/dash]
+//- Homepage Markup
+extends ./layouts/base
+
+block content
+	header
+		logo
+		h1 СТРОЙКА 39
+		p Ремонт и внутренняя отделка квартир
+		div.contacts
+			div.phone-number 8(4012) 99-99-99
+				p.link
+					a(href='') Заказать звонок
+			div.email
+				p.link
+					a(href="") zakaz@stroika39.ru
+	aside.hero
+		img.hero-image
+		div.hero-block
+			p Закажите консультацию и расчет стоимости бесплатно прямо сейчас!
+			form
+				input(type="text", name="user" placeholder="Ваше имя")
+				input(type="text", name="user" placeholder="Контактный телефон")
+				input(type="text", name="user" placeholder="E-mail")
+				input(type="submit", value="Submit")
+				
+
+
+	.container
+		.yeogurt-info
+			h1 Welcome to Yeogurt!
+			p Take a look at the <a href="https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---">documentation</a> and start mixing up something awesome.
+			p
+				img.logo(src="/images/yeogurt-swirl.png", width="75px")
+			p.links
+				a(href="/docs/dashboard/index.html") Dashboard
+				a(href="/docs/styleguide/index.html") Styleguide
+	code.version v0.14.6
